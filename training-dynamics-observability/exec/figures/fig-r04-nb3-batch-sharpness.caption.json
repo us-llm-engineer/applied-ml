@@ -1,0 +1,12 @@
+{
+  "figure_id": "r04-nb3-batch-sharpness",
+  "data_csv": "fig-r04-nb3-batch-sharpness.csv",
+  "caption_rendered": true,
+  "caption": "Left: Batch Sharpness (Definition 3) computed every step from NB2's own real mini-batch gradient and Hessian, at NB2's actual (eta, momentum) -- it stays far below the sufficient threshold, so the reading is INCONCLUSIVE, never a safety claim (Theorem 1 is one-sided). Right: the SAME dataset with eta deliberately amplified reproduces real catapults, showing the criterion is not vacuous.",
+  "encoding": {
+    "x": "step",
+    "y": "batch_sharpness_or_weight_norm"
+  },
+  "png_width": 1750,
+  "png_height": 784
+}

@@ -1,0 +1,12 @@
+{
+  "figure_id": "r04-nb3-honest-comparison",
+  "data_csv": "fig-r04-nb3-honest-comparison.csv",
+  "caption_rendered": true,
+  "caption": "Left: alpha-trimming duality applied to NB2's real 8-seed metrics for arms A and B, not a synthetic sample. Right: the same paired seeds, classical two-sample KS statistic and p-value. The paper's alpha_hat<=0.05-at-30-models and classical-KS-needs-~100 numbers describe a much larger CNN ensemble study and are not applied to this small sample.",
+  "encoding": {
+    "x": "alpha_or_arm",
+    "y": "discrepancy_or_metric"
+  },
+  "png_width": 1680,
+  "png_height": 784
+}

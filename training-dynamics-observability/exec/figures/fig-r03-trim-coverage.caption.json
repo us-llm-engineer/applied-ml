@@ -1,0 +1,13 @@
+{
+  "figure_id": "r03-trim-coverage",
+  "data_csv": "fig-r03-trim-coverage.csv",
+  "caption_rendered": true,
+  "caption": "A bounded synthetic-null audit at N=200/800 with the analytical bound recomputed per cell; the top panels show empirical Eq.32 failure rates with Wilson intervals and the (vacuous at this N) Eq.33 bound, the bottom panels show the two trimming diagnostics. This is not the paper's CNN ensemble rule.",
+  "encoding": {
+    "x": "N",
+    "y": "failure_rate_or_discrepancy",
+    "facet": "contamination"
+  },
+  "png_width": 1820,
+  "png_height": 1008
+}

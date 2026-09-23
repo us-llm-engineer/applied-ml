@@ -1,0 +1,4 @@
+label,trace,value
+loss,q1,squared local toy
+curvature,q1,Rayleigh quotient
+noise,q1,seeded minibatches

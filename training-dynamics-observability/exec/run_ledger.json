@@ -1,0 +1,96 @@
+{
+  "runs": [
+    {
+      "run_id": "nb1-eoss",
+      "notebook": "01",
+      "seed": 20260921,
+      "data_hash": "323508c49bf2e7bddb1aed10fc7090096699044f0832a9e38330c0180d42beab",
+      "config_hash": "083255ce17b8517c518bcf28c7872a3e081d94fae2cc0ff970b40b9db7516f68",
+      "result_hash": "8c17a40acde62d76e23f7ee16d34e11a313ae740d238abf1bc488f5fe7bf9fb5",
+      "wall_time_s": 0.018768901005387306,
+      "assumed_cost_usd": 7.8204e-06,
+      "cost_assumption": "assumed cost = wall-clock seconds x USD 1.50 per GPU-hour (a stated T4-class cloud-rate assumption, not a measured invoice)"
+    },
+    {
+      "run_id": "nb1-momentum",
+      "notebook": "01",
+      "seed": 20260922,
+      "data_hash": "5d4b7408bcc218e54d61cb0ff8a885657d464687faf1a0dbb478fbdc70785d01",
+      "config_hash": "f943844b8a65c805ca8b92532981504dbe4984884cc9d57cde6013f98f0fde66",
+      "result_hash": "3f8b1d9b71d8192266491152790e60183b2b4257ae5294e8d96a635399b0c3f3",
+      "wall_time_s": 2.9319292370055337,
+      "assumed_cost_usd": 0.0012216372,
+      "cost_assumption": "assumed cost = wall-clock seconds x USD 1.50 per GPU-hour (a stated T4-class cloud-rate assumption, not a measured invoice)"
+    },
+    {
+      "run_id": "nb1-variability",
+      "notebook": "01",
+      "seed": 20260923,
+      "data_hash": "226144b253aeed316df70e520d6bb52d708a70e8dcf42a2de5222fc7dc7573ea",
+      "config_hash": "615b0598bcba5e01f7cb42faf9f5d5ebdaa4f092eaa45cf7622885c5dbbce893",
+      "result_hash": "57a14063467a488b44706143929d13cad8fbb42474b733a228ec57d7ce4a9d66",
+      "wall_time_s": 0.05707106401678175,
+      "assumed_cost_usd": 2.37796e-05,
+      "cost_assumption": "assumed cost = wall-clock seconds x USD 1.50 per GPU-hour (a stated T4-class cloud-rate assumption, not a measured invoice)"
+    },
+    {
+      "run_id": "nb2-task-generation",
+      "notebook": "02",
+      "seed": 20260921,
+      "data_hash": "18d2a432e2f86535ae863e95f9f1f78dd350331c72457956dad1c7c4f20fb7e8",
+      "config_hash": "d702ee2b3113a904cd0973972b750ba39083f6e07aea752849bf1fe7ddf6eaf5",
+      "result_hash": "6f92d01165084276070d1ef2c02d43974929c24e926731c186d82011a59b3d07",
+      "wall_time_s": 0.06945935600379016,
+      "assumed_cost_usd": 2.89414e-05,
+      "cost_assumption": "assumed cost = wall-clock seconds x USD 1.50 per GPU-hour (a stated T4-class cloud-rate assumption, not a measured invoice)"
+    },
+    {
+      "run_id": "nb2-task-generation-cached",
+      "notebook": "02",
+      "seed": 20260921,
+      "data_hash": "18d2a432e2f86535ae863e95f9f1f78dd350331c72457956dad1c7c4f20fb7e8",
+      "config_hash": "d702ee2b3113a904cd0973972b750ba39083f6e07aea752849bf1fe7ddf6eaf5",
+      "result_hash": "d53244383ff4adeefe8a1afa5d6235fd34d269039ff2a37cb7e3ebb59a9b0a7a",
+      "wall_time_s": 0.054277373012155294,
+      "assumed_cost_usd": 2.2615572e-05,
+      "cost_assumption": "assumed cost = wall-clock seconds x USD 1.50 per GPU-hour (a stated T4-class cloud-rate assumption, not a measured invoice)",
+      "cache_status": "cached_rerun",
+      "reuses_run_id": "nb2-task-generation",
+      "historical_wall_time_s": 0.06945935600379016,
+      "historical_assumed_cost_usd": 2.89414e-05
+    },
+    {
+      "run_id": "nb2-task-generation-repeat",
+      "notebook": "02",
+      "seed": 20260921,
+      "data_hash": "18d2a432e2f86535ae863e95f9f1f78dd350331c72457956dad1c7c4f20fb7e8",
+      "config_hash": "d702ee2b3113a904cd0973972b750ba39083f6e07aea752849bf1fe7ddf6eaf5",
+      "result_hash": "63ee27697ee7efb460cf14e6b7c5982cbe14bf3a1bd0fbc53b18722b1576311f",
+      "wall_time_s": 0.020153179997578263,
+      "assumed_cost_usd": 8.3972e-06,
+      "cost_assumption": "assumed cost = wall-clock seconds x USD 1.50 per GPU-hour (a stated T4-class cloud-rate assumption, not a measured invoice)"
+    },
+    {
+      "run_id": "nb2-training-sweep",
+      "notebook": "02",
+      "seed": 20260921,
+      "data_hash": "e5e114c76c364bed2abc7619976b8470f1c6577597fbd41301f09aa60c9c7592",
+      "config_hash": "f822c3182ede26c09293b4589bd4de30cb6dcb129e19c2eeb0b9815e870c761a",
+      "result_hash": "c3f23acfb89cebed535d776c4cff8a65ddd0f2d5ccc321f6dc429f4b15edce0e",
+      "wall_time_s": 1.2018519330013078,
+      "assumed_cost_usd": 0.0005007716,
+      "cost_assumption": "assumed cost = wall-clock seconds x USD 1.50 per GPU-hour (a stated T4-class cloud-rate assumption, not a measured invoice)"
+    },
+    {
+      "run_id": "nb3-reuse-verification",
+      "notebook": "03",
+      "seed": 20260921,
+      "data_hash": "18d2a432e2f86535ae863e95f9f1f78dd350331c72457956dad1c7c4f20fb7e8",
+      "config_hash": "d702ee2b3113a904cd0973972b750ba39083f6e07aea752849bf1fe7ddf6eaf5",
+      "result_hash": "c0bde65f96623de6175bf5e98d1e0d9af385761cc5eb7bb1658f69ecda2e2745",
+      "wall_time_s": 0.01366709399735555,
+      "assumed_cost_usd": 5.6946e-06,
+      "cost_assumption": "assumed cost = wall-clock seconds x USD 1.50 per GPU-hour (a stated T4-class cloud-rate assumption, not a measured invoice)"
+    }
+  ]
+}

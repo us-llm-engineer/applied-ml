@@ -1,0 +1,4 @@
+label,trace,value
+CIFAR,q3,800
+SVHN,q3,100
+toy,q3,8
