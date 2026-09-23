@@ -1,0 +1,27 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Notebook and plotting runtime state
+.ipynb_checkpoints/
+.cache/
+jupyter_execute/
+**/executed/
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system noise
+.DS_Store
+*.swp
+*.swo
+
+# Detached-process bookkeeping; grounded research responses remain tracked
+*.pid
+nohup.out
