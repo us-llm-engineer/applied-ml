@@ -1,0 +1,64 @@
+{
+ "caption": "Figure e2: Theorem VI.1's Eq. (44) test-gap factor and admissible band $[1-\\rho(g),1]$ against the measured test-risk ratio on NB2's clean folds, with the embargo NB2 uses marked (C57).",
+ "config": {
+  "bootstrap_seeds": [
+   1,
+   2,
+   3
+  ],
+  "derived_here": "both the window and the reference gap are derived here; the swept evaluation rows are identical across gaps, so the GARCH volatility cancels in the ratio",
+  "embargo_used": 2,
+  "empirical_definition": "for each clean fold f and bootstrap seed s, a ridge (lambda=5) is fit on the trailing min(700, ts-g-VALID_START) rows ending at ts-g-1; the ratio is its mean squared error on the first 8 test rows at that gap over the same error at ref_gap; mean/SE are taken over the 4 folds x 3 seeds",
+  "empirical_in_band_all": false,
+  "gaps": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24
+  ],
+  "n_gaps": 25,
+  "ref_gap": 60,
+  "ref_gap_note": "decoupled reference gap = half the longest rolling window (120/2), where the estimated lag-autocorrelation has died away",
+  "ridge_lambda_fit": 5.0,
+  "test_window": 8,
+  "test_window_note": "the first PURGE=8 rows of each clean fold's test window: the rows a missing purge would expose (label horizon + 2)",
+  "train_cap": 700
+ },
+ "how_to_read": "x is the test gap `$g$` in bars; y is the test-risk ratio\n`$R^k_{\\mathrm{out}}/R^{k=0}_{\\mathrm{out}}$`. The dashed line is the Eq. (44) theory factor computed with\n`$\\hat K$`; the shaded band is `$[1-\\rho(g),\\,1]$`, the theorem's proven range; the solid line with ribbon\nis the empirical mean `$\\pm 1.96\\cdot$SE` over folds/seeds. The vertical dotted line marks the embargo\nwidth NB2 actually uses \u2014 the operational choice this figure is meant to justify.",
+ "plot_type": "ribbon",
+ "run_id": "nb2-r4b-e2",
+ "seeds": {
+  "bootstrap_seeds": [
+   1,
+   2,
+   3
+  ],
+  "clean_folds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ }
+}

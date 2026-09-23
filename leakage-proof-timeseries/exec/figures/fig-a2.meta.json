@@ -1,0 +1,46 @@
+{
+ "run_id": "nb1-r03a-a2",
+ "seeds": 10,
+ "config": {
+  "T": 150,
+  "N": 100,
+  "log10_xi": [
+   -2.5,
+   -2.125,
+   -1.75,
+   -1.375,
+   -1.0,
+   -0.625,
+   -0.25,
+   0.125,
+   0.5,
+   0.875,
+   1.25,
+   1.625,
+   2.0
+  ],
+  "log10_lambda": [
+   -6.0,
+   -5.583333333333333,
+   -5.166666666666667,
+   -4.75,
+   -4.333333333333333,
+   -3.9166666666666665,
+   -3.5,
+   -3.083333333333333,
+   -2.6666666666666665,
+   -2.25,
+   -1.833333333333333,
+   -1.416666666666666,
+   -1.0
+  ],
+  "alpha_exp": 1.8,
+  "r_exp": 0.3,
+  "sigma_eps": 0.05,
+  "noise": "matched K'=K (q2 assumption 2)",
+  "ratio": "mean_over_seeds |gcv1-latent|/latent divided by mean_over_seeds |corrgcv-latent|/latent"
+ },
+ "caption": "Figure a2: CorrGCV's advantage region over the (log10 xi, log10 lambda) plane -- colour is log10(err_GCV1 / err_CorrGCV), diverging around 0, contour at log10 2.",
+ "how_to_read": "x is `log10 \u03be` (correlation length), y is `log10 \u03bb` (ridge strength); warm colour means\nCorrGCV beats GCV\u2081 by more, cool means less; the solid contour marks the \u2265 2\u00d7 advantage boundary from C41.",
+ "plot_type": "heatmap"
+}

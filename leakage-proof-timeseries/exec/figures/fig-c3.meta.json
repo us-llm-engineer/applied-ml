@@ -1,0 +1,64 @@
+{
+ "caption": "Figure c3: mean detection delay vs $\\Delta$ for the ARL and Remark 2.3 PFA detectors against Theorem 2.5's $3/(1-\\alpha)\\,u(\\Delta)$ bound (C50, C51).",
+ "config": {
+  "alpha": 0.05,
+  "change_time": 50,
+  "deltas": [
+   0.1,
+   0.14,
+   0.18,
+   0.24,
+   0.32,
+   0.5
+  ],
+  "env_scale_at_delta": 0.5,
+  "envelope_scale": 0.42802899581339493,
+  "halfband": 0.05,
+  "horizon": 300,
+  "mean_delay_definition": "mean of max(0, tau - change_time) over detected runs; runs censored at the stored horizon are counted in n_detected, not silently folded into the mean",
+  "n_detected_by_delta": {
+   "0.1": {
+    "arl": 100,
+    "pfa": 100
+   },
+   "0.14": {
+    "arl": 100,
+    "pfa": 100
+   },
+   "0.18": {
+    "arl": 100,
+    "pfa": 100
+   },
+   "0.24": {
+    "arl": 100,
+    "pfa": 100
+   },
+   "0.32": {
+    "arl": 100,
+    "pfa": 100
+   },
+   "0.5": {
+    "arl": 100,
+    "pfa": 100
+   }
+  },
+  "n_runs": 100,
+  "paired_streams": true,
+  "sigma": 3.0,
+  "u_by_delta": {
+   "0.1": 13,
+   "0.14": 8,
+   "0.18": 6,
+   "0.24": 4,
+   "0.32": 3,
+   "0.5": 2
+  },
+  "width_cap": 5000
+ },
+ "how_to_read": "`x` is `\u0394` (log), `y` is mean detection delay in steps (log), ribbons are `\u00b11.96\u00b7SE`\nover seeds. The dashed step curve is Theorem 2.5's proved bound for the ARL detector; the dotted curve is Remark\n2.8's Pinsker envelope, shown for scale only, not as a second bound the data must respect.",
+ "plot_type": "ribbon",
+ "run_id": "nb1-r3c-c3",
+ "seeds": {
+  "seed0": 44000
+ }
+}

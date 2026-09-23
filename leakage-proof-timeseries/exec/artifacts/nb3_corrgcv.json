@@ -1,0 +1,18 @@
+{
+ "run_id": "nb3-corrgcv",
+ "model": "ridge",
+ "matched": true,
+ "mismatch_warning": true,
+ "ordinary_gcv": 5.147839163176824,
+ "corrgcv": 191.70910407022765,
+ "latent_risk": 6.089491163579013,
+ "rel_err_gcv": 0.15463558039695818,
+ "rel_err_corrgcv": 30.481957838584545,
+ "kappa": 184.5410503414672,
+ "kappa_tilde": 184.54105034146735,
+ "df_frac_hat": 0.003652507181880104,
+ "ndf1": 0.00014681959714113785,
+ "ndf2": 2.371804898398069e-06,
+ "subordination_residual": 4.005949371489019e-16,
+ "duality_residual": 3.692293786378053e-16
+}

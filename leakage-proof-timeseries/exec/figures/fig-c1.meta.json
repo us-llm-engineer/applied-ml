@@ -1,0 +1,92 @@
+{
+ "caption": "Figure c1: the e-detector $M_n$ on null and changed streams, with the independent Definition 2.1 alarm cross-check on every stored run (C48).",
+ "config": {
+  "alpha": 0.05,
+  "change_deltas": [
+   0.2,
+   0.25,
+   0.3,
+   0.4
+  ],
+  "change_horizon": 150,
+  "change_pool": 60,
+  "change_time": 50,
+  "eq5_relation": "{tau<=n} subset {M_n>=1/alpha}: first M-crossing <= Def 2.1 alarm",
+  "halfband": 0.05,
+  "n_changed_store": 4,
+  "n_null_store": 8,
+  "null_horizon": 60,
+  "null_pool": 60,
+  "pool_stats": {
+   "agree_by_delta": {
+    "0.2": 3,
+    "0.25": 11,
+    "0.3": 8,
+    "0.4": 10
+   },
+   "changed_by_delta": {
+    "0.2": 15,
+    "0.25": 15,
+    "0.3": 15,
+    "0.4": 15
+   },
+   "m_only_detail": [
+    {
+     "delta": null,
+     "horizon": 60,
+     "kind": "null",
+     "run_id": 8,
+     "tau_m": 52
+    }
+   ],
+   "n_pool_agree": 91,
+   "n_pool_both_fire": 60,
+   "n_pool_d_only": 0,
+   "n_pool_differ": 29,
+   "n_pool_gap_max": 2,
+   "n_pool_gap_min": 1,
+   "n_pool_m_only": 1,
+   "pool_changed": 60,
+   "pool_null": 60,
+   "pool_runs": 120,
+   "stored_alarm_times": [
+    53,
+    54,
+    55
+   ],
+   "stored_changed": 4,
+   "stored_changed_deltas": [
+    0.2,
+    0.25,
+    0.3,
+    0.4
+   ],
+   "stored_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    61,
+    62,
+    71,
+    76
+   ],
+   "stored_null": 8,
+   "stored_rows": 1080,
+   "stored_runs": 12
+  },
+  "sigma": 3.0,
+  "theta0": 0.5
+ },
+ "how_to_read": "Each thin line is one null run's `M_n` path (should stay below the dashed `1/\u03b1`\nline); each thick line is one changed run's path (should climb across it soon after the vertical change-time\nmarker).",
+ "plot_type": "line",
+ "run_id": "nb1-r3c-c1",
+ "seeds": {
+  "change_seed0": 41000,
+  "null_seed0": 40000
+ }
+}

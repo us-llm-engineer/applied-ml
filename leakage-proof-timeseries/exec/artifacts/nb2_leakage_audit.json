@@ -1,0 +1,32 @@
+{
+ "future_features": {
+  "flagged": [
+   "f_leak3"
+  ]
+ },
+ "overlap_labels": {
+  "violating_pairs": 19283
+ },
+ "global_norm": {
+  "flagged_folds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "random_split": {
+  "flagged_folds": [
+   0,
+   1,
+   2
+  ]
+ },
+ "clean": {
+  "flags": 0
+ },
+ "labels": {
+  "purge": "derived here: purge = LABEL_HORIZON + 2 bars; a train row's label window must end before the test window starts",
+  "embargo": "derived here: embargo = 2 bars of enforced gap between the last train label end and the first test label start"
+ }
+}

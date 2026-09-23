@@ -1,0 +1,33 @@
+{
+ "caption": "Figure e3: the protocol audit as a forest plot -- mean test IC and its 95% interval per protocol, against the clean protocol's reference IC (C59).",
+ "config": {
+  "family": "protocol",
+  "interval": "95% t-interval (nbs_common.mean_ci) over the 3 seeds x 2 models of each protocol",
+  "n_rows": 6,
+  "protocol_order": [
+   "clean",
+   "leaky_future_features",
+   "leaky_overlap_labels",
+   "leaky_global_norm",
+   "leaky_random_split",
+   "leaky_all"
+  ],
+  "reference": "the clean protocol's mean run IC, constant within the protocol family",
+  "reference_value": 0.07004653470696644
+ },
+ "how_to_read": "each row is one protocol or estimator; the dot is its point estimate and the\nhorizontal whisker is its 95% interval. The dashed vertical line is the reference value for that row's\ngroup (the clean protocol's IC, or an estimator's target truth) \u2014 a row whose interval does not cross the\nline is a resolvable difference from the reference; a row whose interval does cross it is not, honestly,\ndistinguishable from it at this sample size.",
+ "plot_type": "errorbar",
+ "run_id": "nb2-r4b-e3",
+ "seeds": {
+  "models": [
+   "ridge",
+   "seqnn"
+  ],
+  "n_runs_per_protocol": 6,
+  "pipeline_seeds": [
+   1,
+   2,
+   3
+  ]
+ }
+}

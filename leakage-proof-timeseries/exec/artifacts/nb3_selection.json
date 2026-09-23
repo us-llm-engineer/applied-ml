@@ -1,0 +1,43 @@
+{
+ "run_id": "nb3-selection",
+ "candidate_set": {
+  "ids": [
+   "mom_only",
+   "ma5_ma20",
+   "ma20_ma40",
+   "ma40_ma80",
+   "ma80_ma120",
+   "all_clean",
+   "all_clean_lam1",
+   "all_clean_lam50"
+  ],
+  "declared_hash": "874e3438c5eec9fda2af607eff0d2c9daca185daf1b37c06a5e455bc7a527733",
+  "declared_seq": 1
+ },
+ "selection_seq": 2,
+ "observed": [
+  -0.08336670310943269,
+  0.050387524274570335,
+  0.12006485753559426,
+  0.11018617017398019,
+  0.028524480242514708,
+  0.16765863395288128,
+  0.15588656885946253,
+  0.18662938529260184
+ ],
+ "true": [
+  0.05301680110242296,
+  0.06816702329143562,
+  0.09827762956576647,
+  0.1365689209045309,
+  0.02934469343519884,
+  0.029315915481225856,
+  0.030535674951267158,
+  0.062051178621237275
+ ],
+ "selected": "all_clean_lam50",
+ "naive": 0.18662938529260184,
+ "js": 0.16565316491758664,
+ "true_selected": 0.062051178621237275,
+ "caveat": "derived here: this is a selection-bias audit of a synthetic pipeline, not a future-profit guarantee; seeds and architectures are not literally strategies."
+}

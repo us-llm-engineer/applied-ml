@@ -1,0 +1,239 @@
+{
+ "run_id": "nb1-r3b-b1",
+ "seeds": {
+  "b1_seed0": [
+   7100,
+   7200,
+   7300,
+   7400,
+   7500
+  ],
+  "b2_seed0": [
+   9113,
+   9126,
+   9139,
+   9152,
+   9165,
+   9178,
+   9191,
+   9204,
+   9217,
+   9230,
+   9243,
+   9256,
+   9269,
+   9282,
+   9295,
+   9308
+  ],
+  "b3_seed0": [
+   8100,
+   8137,
+   8174,
+   8211
+  ]
+ },
+ "config": {
+  "plan": "round-03-b",
+  "protocol": "fresh-zeta ranking (zeta drawn per rep; tau/rho across reps)",
+  "units": "annualized yr^-1/2; noise variance 252/n_days",
+  "n_anchors": [
+   126,
+   252,
+   504,
+   1008,
+   2016
+  ],
+  "b1": {
+   "reps_per_anchor": 500,
+   "k_ladder": [
+    10,
+    30,
+    100,
+    300,
+    1000
+   ],
+   "sigma_zeta": "U[0,1]",
+   "layouts": [
+    "gaussian",
+    "uniform",
+    "bimodal"
+   ],
+   "seed0": 7100
+  },
+  "b2": {
+   "reps_per_problem": 500,
+   "problems": [
+    {
+     "n": 1008,
+     "k": 100,
+     "rho": 0.0,
+     "sigma_zeta": 0.25,
+     "layout": "gaussian"
+    },
+    {
+     "n": 1008,
+     "k": 100,
+     "rho": 0.0,
+     "sigma_zeta": 0.5,
+     "layout": "gaussian"
+    },
+    {
+     "n": 1008,
+     "k": 100,
+     "rho": 0.0,
+     "sigma_zeta": 0.75,
+     "layout": "gaussian"
+    },
+    {
+     "n": 1008,
+     "k": 100,
+     "rho": 0.0,
+     "sigma_zeta": 1.0,
+     "layout": "gaussian"
+    },
+    {
+     "n": 1008,
+     "k": 100,
+     "rho": 0.0,
+     "sigma_zeta": 1.5,
+     "layout": "gaussian"
+    },
+    {
+     "n": 252,
+     "k": 100,
+     "rho": 0.0,
+     "sigma_zeta": 1.0,
+     "layout": "gaussian"
+    },
+    {
+     "n": 2016,
+     "k": 100,
+     "rho": 0.0,
+     "sigma_zeta": 1.0,
+     "layout": "gaussian"
+    },
+    {
+     "n": 1008,
+     "k": 10,
+     "rho": 0.0,
+     "sigma_zeta": 1.0,
+     "layout": "gaussian"
+    },
+    {
+     "n": 1008,
+     "k": 300,
+     "rho": 0.0,
+     "sigma_zeta": 1.0,
+     "layout": "gaussian"
+    },
+    {
+     "n": 1008,
+     "k": 100,
+     "rho": 0.5,
+     "sigma_zeta": 0.5,
+     "layout": "gaussian"
+    },
+    {
+     "n": 1008,
+     "k": 100,
+     "rho": 0.85,
+     "sigma_zeta": 0.5,
+     "layout": "gaussian"
+    },
+    {
+     "n": 1008,
+     "k": 100,
+     "rho": 0.0,
+     "sigma_zeta": 1.0,
+     "layout": "uniform"
+    },
+    {
+     "n": 1008,
+     "k": 100,
+     "rho": 0.0,
+     "sigma_zeta": 1.0,
+     "layout": "bimodal"
+    },
+    {
+     "n": 252,
+     "k": 100,
+     "rho": 0.0,
+     "sigma_zeta": 0.5,
+     "layout": "uniform"
+    },
+    {
+     "n": 2016,
+     "k": 100,
+     "rho": 0.0,
+     "sigma_zeta": 1.0,
+     "layout": "bimodal"
+    },
+    {
+     "n": 1008,
+     "k": 100,
+     "rho": 0.85,
+     "sigma_zeta": 0.5,
+     "layout": "uniform"
+    }
+   ],
+   "seed0": 9100
+  },
+  "b3": {
+   "reps_per_corner": 150,
+   "corners": [
+    {
+     "n": 252,
+     "k": 100,
+     "rho": 0.0,
+     "sigma_zeta": 0.5,
+     "layout": "gaussian"
+    },
+    {
+     "n": 252,
+     "k": 100,
+     "rho": 0.0,
+     "sigma_zeta": 0.25,
+     "layout": "gaussian"
+    },
+    {
+     "n": 1008,
+     "k": 100,
+     "rho": 0.0,
+     "sigma_zeta": 0.5,
+     "layout": "gaussian"
+    },
+    {
+     "n": 1008,
+     "k": 100,
+     "rho": 0.0,
+     "sigma_zeta": 1.0,
+     "layout": "gaussian"
+    }
+   ],
+   "seed0": 8100
+  },
+  "gmleb": {
+   "grid_atoms": 41,
+   "grid_lo": -5.0,
+   "grid_hi": 5.0,
+   "em_iters": 18,
+   "em_tol": 1e-05
+  },
+  "polyhedral": {
+   "u_lo": -40.0,
+   "u_hi": 35.0,
+   "bisection_iters": 100
+  },
+  "claim_ids": [
+   "C43",
+   "C44",
+   "C45",
+   "C46",
+   "C47"
+  ]
+ },
+ "caption": "Figure b1: rank agreement (Kendall tau, Spearman rho_s) vs backtest length n for all six post-selection estimators, under the paper's pooled ranking protocol, with the n=1008 James-Stein reference from q11.",
+ "how_to_read": "Panel (a) is Kendall τ vs sample size `n` (log axis, days); panel (b) is Spearman\nρ_s vs `n`; one line + ±1.96·SE ribbon per estimator, with the paper's n=1008 James–Stein value shown as a black\nerror-bar marker for direct comparison.",
+ "plot_type": "line"
+}

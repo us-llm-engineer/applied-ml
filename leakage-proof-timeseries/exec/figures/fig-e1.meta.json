@@ -1,0 +1,65 @@
+{
+ "caption": "Figure e1: ordinary GCV, CorrGCV on the empirical Gram and CorrGCV on a stationary Toeplitz $\\hat K$ against held-out risk across a log-spaced $\\lambda$ sweep, with the estimated lag-autocorrelation $\\hat A_\\tau$ in the inset (C56).",
+ "config": {
+  "a_tau_definition": "biased lag-autocorrelation of the standardized design rows: A_tau = (1/T) sum_t z_t . z_{t+tau} / N, normalized by A_0",
+  "a_tau_lags": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "band_scale": "mean eigenvalue of the empirical sample Gram (tr(Z'Z/T)/T), so the unit-diagonal Toeplitz K_hat and the empirical Gram are comparable",
+  "clean_folds": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "derived_here": "train_cap=700 trailing rows of each clean fold's training window: the stationary estimate is more credible over a shorter window and it keeps q=N/T comparable across folds and the eigendecompositions inside budget",
+  "lambda_grid": [
+   0.01,
+   0.023101297000831605,
+   0.0533669923120631,
+   0.12328467394420659,
+   0.2848035868435802,
+   0.6579332246575682,
+   1.5199110829529332,
+   3.511191734215131,
+   8.111308307896872,
+   18.73817422860385,
+   43.287612810830616,
+   100.0
+  ],
+  "n_inset_lags": 8,
+  "n_main_lambdas": 12,
+  "nb3_ref_corrgcv_gram_rel_err": 30.481957838584545,
+  "nb3_ref_ordinary_gcv_rel_err": 0.15463558039695818,
+  "rel_err_mean_recomputed": {
+   "corrgcv_gram": 85.9013993092439,
+   "corrgcv_toeplitz": 54.90009727466239,
+   "ordinary_gcv": 0.320906962654684
+  },
+  "ridge_lambda_fit": 5.0,
+  "train_cap": 700
+ },
+ "how_to_read": "the main panel plots risk vs. ridge penalty `$\\lambda$` on log-log axes \u2014\nsolid lines are the four estimators (ordinary GCV, CorrGCV on the empirical Gram, CorrGCV on the\nToeplitz `$\\hat K$`, and the black held-out-risk ground truth), each with a `+/-1.96` SE ribbon over\nseeds/folds. The inset shows the estimated lag-autocorrelation `$\\hat A_\\tau$` vs. lag `$\\tau$` with its\n95% CI \u2014 the O(T)-parameter structure the Toeplitz route is built from (q4).",
+ "plot_type": "ribbon",
+ "run_id": "nb3-r4b-e1",
+ "seeds": {
+  "clean_folds": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "pipeline_seeds": [
+   1,
+   2,
+   3
+  ]
+ }
+}

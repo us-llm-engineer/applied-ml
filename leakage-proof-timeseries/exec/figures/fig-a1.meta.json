@@ -1,0 +1,43 @@
+{
+ "run_id": "nb1-r03a-a1",
+ "seeds": 10,
+ "config": {
+  "T_grid": [
+   10,
+   16,
+   25,
+   40,
+   63,
+   100,
+   158,
+   251,
+   398,
+   631,
+   1000
+  ],
+  "regimes": {
+   "weak": {
+    "xi": 0.01,
+    "lambda": 0.01,
+    "sigma_eps": 0.05
+   },
+   "strong": {
+    "xi": 100.0,
+    "lambda": 0.0001,
+    "sigma_eps": 0.05
+   }
+  },
+  "k_families": [
+   "exponential",
+   "nearest_neighbor",
+   "power_law"
+  ],
+  "nearest_neighbor_b": "min(2*exp(-1/xi), 0.999) -- lag-1 matched, PD cap (derived here)",
+  "power_law_chi": "1/(xi*ln 2) -- lag-1 matched (derived here)",
+  "k_normalisation": "Tr(K)/T = 1",
+  "noise": "matched K'=K (q2 assumption 2)"
+ },
+ "caption": "Figure a1: estimator risk vs. T across regimes and K families -- GCV1, GCV2, Carmack, CorrGCV and the latent out-of-sample risk with +-1.96*SE ribbons over 10 seeds, plus the dashed deterministic-equivalent theory curve (Thm IV.2 / Eq. 30).",
+ "how_to_read": "Each panel is one (regime, K-family) combination; T runs left-to-right on a log axis,\nrisk runs bottom-to-top on a log axis. In the strong-correlation row, CorrGCV (and the dashed theory curve) should\nhug the latent-risk line while GCV\u2081 undershoots and GCV\u2082 overshoots it.",
+ "plot_type": "ribbon"
+}

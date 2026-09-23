@@ -1,0 +1,42 @@
+{
+ "run_id": "nb1-r03a-a3",
+ "seeds": 10,
+ "config": {
+  "T": 100,
+  "N": 100,
+  "xi": 100.0,
+  "lambda": 0.0001,
+  "sigma_eps": 0.05,
+  "taus": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   12,
+   14,
+   16,
+   18,
+   20,
+   25,
+   30,
+   35,
+   40,
+   45,
+   50
+  ],
+  "test_draws_per_seed": 64,
+  "test_point": "x = X^T alpha + sqrt(1-rho) Sigma^{1/2} z (Thm VI.1 Eq. 43)",
+  "risk": "((wbar - w_hat)^T x)^2 + sigma_eps^2",
+  "alpha_exp": 1.8,
+  "r_exp": 0.3
+ },
+ "caption": "Figure a3: near-horizon test-point optimism (Theorem VI.1) -- empirical R^k_out / R^{k=0}_out with +-1.96*SE ribbons over 10 seeds against the dashed Eq. (44) factor and the admissible band [1 - rho(tau), 1].",
+ "how_to_read": "x is forecast lag `\u03c4` (samples after the training window ends); y is the risk ratio\n`R^k_out / R^{k=0}_out`. The dashed line is the Eq. (44) theory factor; the shaded band is `[1 \u2212 \u03c1(\u03c4), 1]`, the\npaper's proven range; the solid line with ribbon is the empirical mean \u00b1 1.96\u00b7SE over seeds. As `\u03c4 \u2192 0`, \u03c1 \u2192 1 and\nthe ratio should fall toward `1 \u2212 \u03c1`; as `\u03c4` grows, it should rise back toward 1.",
+ "plot_type": "ribbon"
+}

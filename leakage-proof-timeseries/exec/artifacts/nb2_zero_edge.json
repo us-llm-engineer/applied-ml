@@ -1,0 +1,9 @@
+{
+ "run_id": "nb2-clean-ridge-s1",
+ "ic": -0.1106285062740864,
+ "ci": [
+  -0.3482212447233363,
+  0.14031980316664686
+ ],
+ "verdict": "interval_includes_zero"
+}

@@ -1,0 +1,47 @@
+{
+ "caption": "Figure d1: the first e-detector crossing $n_M$ of $1/\\alpha$ against Definition 2.1's alarm round $\\tau$ over the full unfiltered pool (C52) -- one point per run of the pool, dashed $y=x$, marginal histogram of $\\tau - n_M$.",
+ "config": {
+  "alpha": 0.05,
+  "change_deltas": [
+   0.2,
+   0.25,
+   0.3,
+   0.4
+  ],
+  "change_horizon": 150,
+  "change_pool": 60,
+  "change_time": 50,
+  "eq5_relation": "Eq. (5) of Thm 2.2's proof is the subset relation {tau<=n} subset {M_n>=1/alpha}; a fully coinciding pool is legal and is reported, never forced",
+  "halfband": 0.05,
+  "independent_record": "exec/artifacts/nb1_fcs_full_pool.json (n_runs/n_null/n_changed/run_ids/n_alarmed/n_disagree)",
+  "null_horizon": 60,
+  "null_pool": 60,
+  "pool_stats": {
+   "agreement_fraction": 0.5333333333333333,
+   "gap_histogram": {
+    "-1": 27,
+    "-2": 1,
+    "0": 32
+   },
+   "max_nM_minus_tau": 0,
+   "min_nM_minus_tau": -2,
+   "n_alarmed": 60,
+   "n_changed": 60,
+   "n_disagree": 28,
+   "n_m_only": 1,
+   "n_null": 60,
+   "n_runs": 120,
+   "selected_for_plot": 60
+  },
+  "selection": "none -- every one of the 120 pool runs is a fig-d1.csv row; selected_for_plot marks only the both-fired runs the scatter can place",
+  "sigma": 3.0,
+  "theta0": 0.5
+ },
+ "how_to_read": "Each point is one run of the full pool; the x-axis is the Definition\n2.1 alarm round `\u03c4`, the y-axis is the round `n_M` at which the e-detector first crosses `1/\u03b1`.\nEvery point must sit on or below the dashed `y=x` line; the histogram along the margin shows how\nmany rounds early the e-detector typically fires.",
+ "plot_type": "scatter",
+ "run_id": "nb1-r4a-d1",
+ "seeds": {
+  "change_seed0": 41000,
+  "null_seed0": 40000
+ }
+}

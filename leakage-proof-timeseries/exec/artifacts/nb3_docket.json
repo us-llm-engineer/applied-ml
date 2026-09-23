@@ -1,0 +1,67 @@
+{
+ "rows": [
+  {
+   "statement": "Part-1 artifacts are reused unchanged: source notebook and dataset hashes recorded, run ids cross-checked.",
+   "backing": "run",
+   "ref": "nb3-provenance"
+  },
+  {
+   "statement": "CorrGCV/GCV audit of clean ridge fold 0; the estimator is attached to linear ridge only, with a mismatch warning.",
+   "backing": "run",
+   "ref": "nb3-corrgcv"
+  },
+  {
+   "statement": "Candidate set declared before scoring; shrinkage reported against the naive validation winner.",
+   "backing": "run",
+   "ref": "nb3-selection"
+  },
+  {
+   "statement": "Single-change monitor: bounded rolling hit rate, repeated-FCS alarm reported in series-t coordinates.",
+   "backing": "run",
+   "ref": "nb3-monitor"
+  },
+  {
+   "statement": "Cost docket itself: wall time per ledger row, CPU count, zero external spend.",
+   "backing": "run",
+   "ref": "nb3-docket"
+  },
+  {
+   "statement": "The ARL guarantee is an expectation (>= 1/alpha), not a fixed-horizon false-alarm probability.",
+   "backing": "trace",
+   "ref": "nlm/responses/leakage-proof-ts-q8.json"
+  },
+  {
+   "statement": "The CorrGCV guarantee is lost under correlation mismatch (K' != K); no GCV can match it without the noise level.",
+   "backing": "trace",
+   "ref": "nlm/responses/leakage-proof-ts-q4.json"
+  },
+  {
+   "statement": "Shekhar & Ramdas report zero Monte Carlo experiments, so all detector tolerances here are derived here.",
+   "backing": "trace",
+   "ref": "nlm/responses/leakage-proof-ts-q11.json"
+  },
+  {
+   "statement": "Purge and embargo widths are not settled by any source; the 8/2-bar values are derived here.",
+   "backing": "derived here",
+   "ref": "derived here: purge = LABEL_HORIZON + 2, embargo = 2"
+  },
+  {
+   "statement": "James-Stein shrinkage is not a future-profit guarantee; seeds and architectures are not literally strategies.",
+   "backing": "derived here",
+   "ref": "derived here: synthetic pipeline audit, no tradable claim"
+  },
+  {
+   "statement": "Detector restart/refractory policy and multi-alarm error control after the first alarm are unsettled.",
+   "backing": "not settled",
+   "ref": "Q10 lists alarm restart policy as unstated; this notebook records one alarm and stops"
+  },
+  {
+   "statement": "Transaction costs, slippage and turnover are absent from all three sources and from this pipeline.",
+   "backing": "not settled",
+   "ref": "Q12: transaction costs and execution slippage not stated in any source"
+  }
+ ],
+ "total_wall_time_s": 341.64781868203136,
+ "cpu_count": 12,
+ "external_spend_usd": 0.0
+}

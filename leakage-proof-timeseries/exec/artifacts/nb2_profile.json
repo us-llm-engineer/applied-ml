@@ -1,0 +1,118 @@
+{
+ "regimes": [
+  {
+   "id": 0,
+   "start": 0,
+   "end": 420,
+   "kind": "weak_edge",
+   "true_ic": 0.15
+  },
+  {
+   "id": 1,
+   "start": 420,
+   "end": 820,
+   "kind": "weak_edge",
+   "true_ic": 0.09
+  },
+  {
+   "id": 2,
+   "start": 820,
+   "end": 1200,
+   "kind": "zero_edge",
+   "true_ic": 0.0
+  },
+  {
+   "id": 3,
+   "start": 1200,
+   "end": 1600,
+   "kind": "regime_edge",
+   "true_ic": -0.13
+  },
+  {
+   "id": 4,
+   "start": 1600,
+   "end": 2000,
+   "kind": "weak_edge",
+   "true_ic": 0.17
+  },
+  {
+   "id": 5,
+   "start": 2000,
+   "end": 2450,
+   "kind": "zero_edge",
+   "true_ic": 0.0
+  },
+  {
+   "id": 6,
+   "start": 2450,
+   "end": 2850,
+   "kind": "weak_edge",
+   "true_ic": 0.12
+  },
+  {
+   "id": 7,
+   "start": 2850,
+   "end": 3200,
+   "kind": "weak_edge",
+   "true_ic": 0.07
+  }
+ ],
+ "features": {
+  "f_mom": {
+   "kind": "clean",
+   "offset": 0
+  },
+  "f_ma5": {
+   "kind": "clean",
+   "offset": -4
+  },
+  "f_sd5": {
+   "kind": "clean",
+   "offset": -4
+  },
+  "f_ma10": {
+   "kind": "clean",
+   "offset": -9
+  },
+  "f_sd10": {
+   "kind": "clean",
+   "offset": -9
+  },
+  "f_ma20": {
+   "kind": "clean",
+   "offset": -19
+  },
+  "f_sd20": {
+   "kind": "clean",
+   "offset": -19
+  },
+  "f_ma40": {
+   "kind": "clean",
+   "offset": -39
+  },
+  "f_sd40": {
+   "kind": "clean",
+   "offset": -39
+  },
+  "f_ma80": {
+   "kind": "clean",
+   "offset": -79
+  },
+  "f_sd80": {
+   "kind": "clean",
+   "offset": -79
+  },
+  "f_ma120": {
+   "kind": "clean",
+   "offset": -119
+  },
+  "f_sd120": {
+   "kind": "clean",
+   "offset": -119
+  },
+  "f_leak3": {
+   "kind": "leak_future",
+   "offset": 3
+  }
+ }
+}

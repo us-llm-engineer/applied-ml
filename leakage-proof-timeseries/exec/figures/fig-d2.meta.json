@@ -1,0 +1,42 @@
+{
+ "run_id": "nb1-r4a-d2",
+ "seeds": 10,
+ "config": {
+  "regime": "weak",
+  "xi": 0.01,
+  "lambda": 0.01,
+  "sigma_eps": 0.05,
+  "N": 100,
+  "T_grid": [
+   10,
+   16,
+   25,
+   40,
+   63,
+   100,
+   158,
+   251,
+   398,
+   631,
+   1000
+  ],
+  "k_families": [
+   "exponential",
+   "nearest_neighbor",
+   "power_law"
+  ],
+  "series": [
+   "carmack_estimate",
+   "bracket"
+  ],
+  "seeds_per_point": 10,
+  "bracket_formula": "1 - (df2*dtf2)/(df1*dtf1)/(1 - dtf2/dtf1) (q3 Carmack GCCV, unsquared)",
+  "carmack": "S^2 * bracket^2 * R_in (S = kappa/lambda, population df-form bracket)",
+  "bracket_per_seed": "feature-side df1/df2 re-estimated from the realized covariance diagonal via the exact trace identity E[X^T X / T] = Sigma (unbiased at the renormalized kappa); K-side dtf1/dtf2 from the design's known K -- so the recorded seed spread is finite-sample estimation error, while the exact bracket is deterministic",
+  "alpha_exp": 1.8,
+  "r_exp": 0.3
+ },
+ "caption": "Figure d2: the Carmack GCCV estimate (log y) and q3's unsquared bracket 1 - (df2*dtf2)/(df1*dtf1)/(1 - dtf2/dtf1) (linear y, dashed zero line) against a shared log T axis, weak regime, one line +-1.96*SE ribbon per K family over 10 seeds -- the dip in the upper panel is compared with the bracket's zero crossing in the lower panel.",
+ "how_to_read": "Top panel: Carmack GCCV estimate vs `T` (both log), one line + ribbon\nper K-family. Bottom panel, same x-axis: the bracket term `1 - (df2*dtf2)/(df1*dtf1)/(1-dtf2/dtf1)`\nvs `T` (linear), with a dashed zero line. If the dip lines up with a bracket zero-crossing at the\nsame `T`, the dip is explained by the formula, not a bug.",
+ "plot_type": "ribbon"
+}

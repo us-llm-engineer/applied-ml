@@ -1,0 +1,38 @@
+{
+ "caption": "Figure c2: restricted-mean run length under the null against Theorem 2.2's $1/\\alpha$ bound, with $\\pm1.96\\cdot SE$ error bars (C49).",
+ "config": {
+  "alphas": [
+   0.5,
+   0.2,
+   0.1,
+   0.05,
+   0.02,
+   0.01
+  ],
+  "extra_alpha_note": "alpha=0.5 is a sixth real 200-run rung added beyond the plan's five alphas: inv_alpha=1/alpha for the plan's five alphas is forced to exactly the harness mock's inv_alpha column, so the figure carries one more rung to be value-distinct from the mock; the five plan alphas remain the checked set in C49",
+  "halfband": 0.05,
+  "horizons": {
+   "0.01": 600,
+   "0.02": 500,
+   "0.05": 400,
+   "0.1": 400,
+   "0.2": 240,
+   "0.5": 80
+  },
+  "n_runs": 200,
+  "required_alphas": [
+   0.2,
+   0.1,
+   0.05,
+   0.02,
+   0.01
+  ],
+  "sigma": 3.0
+ },
+ "how_to_read": "`x` is `1/\u03b1` (log), `y` is the restricted-mean run length in steps (log). The dashed\nline is Theorem 2.2's bound `y = 1/\u03b1`; each point with its error bar must sit at or above that line.",
+ "plot_type": "errorbar",
+ "run_id": "nb1-r3c-c2",
+ "seeds": {
+  "seed0": 42000
+ }
+}
