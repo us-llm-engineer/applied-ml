@@ -1,0 +1,31 @@
+{
+  "run_id": "t5-r01-20260922T102410Z",
+  "provenance": "seed=914|stream_seed=2718|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py",
+  "n_steps": 8,
+  "signals_equal": true,
+  "trigger_schedule_equal": true,
+  "observed_triggers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "counterfactual_triggers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "x_unchanged": true,
+  "y_changed": true,
+  "loss_changed": true,
+  "gap_threshold_used": -0.9490608297351875
+}

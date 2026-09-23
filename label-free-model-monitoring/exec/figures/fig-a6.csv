@@ -1,0 +1,17 @@
+latency_case,time,event,model_epoch_serving,queue_busy,nominal_budget_remaining,effective_completed_retrains,audit_pending_labels,audit_released_labels,audit_loss_mean,seed,run_id,provenance
+immediate,0,monitor,0,0,2,0,0,0,,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
+immediate,1,request_accepted|training_complete|deployed,1,0,1,1,1,0,,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
+immediate,2,request_accepted|training_complete|deployed,2,0,0,2,2,0,,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
+immediate,3,monitor,2,0,0,2,2,1,0.00025893280968354674,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
+immediate,4,monitor,2,0,0,2,2,2,0.00013043436319846964,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
+immediate,5,monitor,2,0,0,2,2,3,0.30692166171586616,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
+immediate,6,monitor,2,0,0,2,2,4,0.33008803203783466,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
+immediate,7,monitor,2,0,0,2,2,5,0.2641186944934684,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
+delayed,0,monitor,0,0,2,0,0,0,,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
+delayed,1,request_accepted,0,1,2,0,1,0,,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
+delayed,2,request_rejected,0,1,2,0,2,0,,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
+delayed,3,training_complete,0,1,2,0,2,1,0.00025893280968354674,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
+delayed,4,deployed,1,0,1,1,2,2,0.00013043436319846964,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
+delayed,5,monitor,1,0,1,1,2,3,0.30692166171586616,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
+delayed,6,monitor,1,0,1,1,2,4,0.33008803203783466,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
+delayed,7,monitor,1,0,1,1,2,5,0.2641186944934684,0,t5-r01-20260922T102410Z,seed=0|run_id=t5-r01-20260922T102410Z|producer=exec/figures.py
