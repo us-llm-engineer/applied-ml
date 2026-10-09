@@ -3,14 +3,13 @@
 | Notebook | Shows | Runtime |
 |---|---|---|
 | `01_research_foundations.ipynb` | Each source paper's estimand, identifiability boundary, and guarantee, derived and checked on seeded synthetic data; the conditional retrain-count ceiling and its assumption check; literature trace citations for every source used. | CPU, executed |
-| `02_project_walkthrough_part1.ipynb` | A synthetic deployed classifier with known latent outcomes, a naive monitor's failure modes, the delayed-audit queue, the finite-capacity training/deployment queue, and the immediate-vs-delayed retraining-decision comparison. | CPU, executed |
-| `03_project_walkthrough_part2.ipynb` | The retraining controller's full lifecycle, paired policy comparisons, cost and hindsight-regret, uncertainty/practical-significance checks, and a reuse of NB2's delayed-decision evidence to price the cost of detection failure correctly. | CPU, executed |
+| `02_baseline_deployment_study.ipynb` | A synthetic deployed classifier with known latent outcomes, a naive monitor's failure modes, the delayed-audit queue, the finite-capacity training/deployment queue, and the immediate-vs-delayed retraining-decision comparison. | CPU, executed |
+| `03_monitoring_and_retraining_policies.ipynb` | The retraining controller's full lifecycle, paired policy comparisons, cost and hindsight-regret, uncertainty/practical-significance checks, and a reuse of NB2's delayed-decision evidence to price the cost of detection failure correctly. | CPU, executed |
 
-Every claim-bearing section carries a trace citation to its source, a design
-note naming what is `derived here` versus paper-stated, a numbered self-check
-that recomputes an assertion from a real artifact on disk, a "how to read
-this chart" note, and a rendered figure. Figure links in this folder are
-relative: `../exec/figures/fig-aN.png`.
+Each claim-bearing section cites its source, notes what is `derived here`
+versus paper-stated, recomputes an assertion from an artifact on disk, and ends
+with a "how to read this chart" note and a rendered figure. Figure links in this folder are
+relative: `../label_free_monitoring/figures/fig-aN.png`.
 
 ## 01 — Research foundations
 
@@ -24,12 +23,8 @@ relative: `../exec/figures/fig-aN.png`.
 - **The conditional count bound.** A Regol-style ceiling on the number of
   optimal retrains is checked only where its uniform adjacent-model-gap
   assumption holds; the one setting that violates it is drawn with no ceiling.
-- **Literature trace completeness.** Every research query behind this
-  notebook — including the two supplemental papers that ground the count
-  bound and the retraining-systems comparison — is cited by trace slug, not
-  only paraphrased.
 
-## 02 — Project walkthrough, part 1: baseline deployment study
+## 02 — Baseline deployment study
 
 - **Data and preprocessing.** Six shift regimes share one source sample and
   one classifier; a naive feature-drift monitor's failure modes are shown
@@ -48,7 +43,7 @@ relative: `../exec/figures/fig-aN.png`.
   grid, delaying the label by 2–4 steps measurably shifts detection timing
   and turns some "detected, later" outcomes into "never detected."
 
-## 03 — Project walkthrough, part 2: controller, policy comparison, and cost
+## 03 — Monitoring and retraining policies: controller, policy comparison, and cost
 
 - **Controller lifecycle.** The legal path stable → audit → candidate →
   promote/rollback → cooldown is exercised end to end; every illegal

@@ -1,0 +1,13 @@
+{
+  "figure_id": "r03-momentum-window-ablation",
+  "data_csv": "fig-momentum-window-ablation.csv",
+  "caption_rendered": true,
+  "caption": "Every frozen common window (w-small, w-shift) and all four held-out leave-one-out windows of w-small are refit on the same deterministic rows at rho=0.90; the order-level sgd < polyak < nesterov reading is reported for every window, and target lines are order-level references for this CPU toy, not exact paper constants.",
+  "encoding": {
+    "x": "window_id",
+    "y": "fitted_b_slope",
+    "color": "optimizer"
+  },
+  "png_width": 1680,
+  "png_height": 896
+}

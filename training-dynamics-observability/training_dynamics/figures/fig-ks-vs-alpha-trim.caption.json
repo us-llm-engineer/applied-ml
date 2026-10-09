@@ -1,0 +1,13 @@
+{
+  "figure_id": "ctx-ks-vs-alpha-trim",
+  "data_csv": "fig-ks-vs-alpha-trim.csv",
+  "caption_rendered": true,
+  "caption": "Left axis (paper, external): Table I shows alpha-trimming reaching 100% of ensembles by M_ens=30 while an untrimmed comparison needs ~100 (Section III-A). Right axis (this project): a classical two-sample KS rejection rate on this file's own bounded null at various N -- a different measurement on a different (much smaller) problem, plotted alongside, not merged.",
+  "encoding": {
+    "x": "N_or_Mens",
+    "y": "value",
+    "color": "kind"
+  },
+  "png_width": 1470,
+  "png_height": 812
+}

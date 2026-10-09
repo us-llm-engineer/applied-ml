@@ -1,0 +1,13 @@
+{
+  "figure_id": "ctx-formal-setup",
+  "data_csv": "fig-formal-setup.csv",
+  "caption_rendered": true,
+  "caption": "Every cell is Query 1's verbatim quote for that paper and dimension; red cells are the source's own gaps (P3 defines no Hessian/curvature object and no explicit update equation), flagged rather than papered over with an invented default.",
+  "encoding": {
+    "x": "paper",
+    "y": "dimension",
+    "color": "defined_vs_flagged"
+  },
+  "png_width": 2325,
+  "png_height": 1080
+}

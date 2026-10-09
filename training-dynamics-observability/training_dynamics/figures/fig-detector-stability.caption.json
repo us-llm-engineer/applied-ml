@@ -1,0 +1,13 @@
+{
+  "figure_id": "r03-detector-stability",
+  "data_csv": "fig-detector-stability.csv",
+  "caption_rendered": true,
+  "caption": "Telemetry-only perturbations over every operator and strength, with the denominator counting all 25 seed x incident attempts and Wilson 95% intervals; abstention stays a separate outcome. This is not production accuracy, false-alarm, or miss-rate evidence.",
+  "encoding": {
+    "x": "strength",
+    "y": "stability_rate_and_abstention_rate",
+    "facet": "operator"
+  },
+  "png_width": 1820,
+  "png_height": 784
+}

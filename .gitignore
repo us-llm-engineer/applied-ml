@@ -21,7 +21,3 @@ jupyter_execute/
 .DS_Store
 *.swp
 *.swo
-
-# Detached-process bookkeeping; grounded research responses remain tracked
-*.pid
-nohup.out
